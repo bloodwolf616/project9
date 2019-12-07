@@ -24,7 +24,7 @@ var player1 = new Player('Chris', '23', true);
 var player2 = new Player('John', '34', true);
 var player3 = new Player('Kelly', '18', false);
 var player4 = new Player('Madison', '25', true);
-var player5 = new Player('Alex', '25', false);
+
 
 var attendance = [player1, player2, player3, player4];
 
