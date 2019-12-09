@@ -69,15 +69,23 @@ player profile styles
 
 }
 
+.name {
+  margin-right: 1rem;
+}
+
 .profile-name {
   font-family: 'Poppins';
   font-size: 2.5rem;
 }
 
+.age {
+  margin-left: 3rem;
+}
+
 .profile-age {
   font-family: 'Poppins';
   font-size: 2.5rem;
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
 
 .style-online {
