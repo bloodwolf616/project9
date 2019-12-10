@@ -5,7 +5,7 @@ class Player {
     constructor(name,age,online=false) {
         this.name = name;
         this.age = age;
-        this.online = online;
+        //this.online = online;
     }
 //creates a method we can use for these objects that do special tasks
 
@@ -29,33 +29,67 @@ const error = new Player('ERROR', 'ERROR');
 const player2 = new Player('John', '34');
 const player3 = new Player('Kelly', '18');
 const player4 = new Player('Madison', '25');
+const player5 = new Player('Constantine', '21');
 
+// player1._online = true;
+// player2._online = true;
+// player3._online = true;
+// player4._online = true;
 
 //storing my objects in a array
-const attendance = [player1, error, player2, player3, player4];
+const attendance = [player1, error, player2, player3, player4, player5];
 
-//addding dynamic values
-/*
+
+
+
+
+//changing the values  of an object based on the time of day.
+
 const today = new Date();
 const hour = today.getHours();
 const second = today.getSeconds();
 
-for (let i = 0; i < attendance.length; i++){
+if  (hour > 3 && hour < 13) {
+   player1._online = true;
+   player2._online = true;
+   player3._online = true;
+   player4._online = true;
+ }
+ else {
+   player1._online = false;
+   player2._online = false;
+   player3._online = false;
+   player4._online = false;
+ }
 
-    if (hour > 19 && hour < 20) {
-        if(player1 && player2 && player3 && player4) {attendance[i]._online = true;}
-    } else {
-        attendance[i]._online = false;
-    }
+ if  (hour > 20  && hour < 21) {
+    player1._online = true;
+    player2._online = true;
+    player3._online = true;
+    player4._online = true;
+  }
 
-    if (second > 20 || second < 40) {
-        if(error) {
-            attendance[i]._online = true;}
-    } else {
-        attendance[i]._online = false;
-    }
-}
-*/
+
+    if (second > 0 && second < 10) {
+        if(error) {error._online = true;}}
+
+    if (second > 10 && second < 20) {
+        if(error) {error._online = false;}}
+
+    if (second > 20 && second < 30) {
+          if(error) {error._online = true;}}
+
+    if (second > 30 && second < 40) {
+          if(error) {error._online = false;}}
+
+    if (second > 40 && second < 50) {
+              if(error) {error._online = true;}}
+
+    if (second > 50 && second < 60) {
+              if(error) {error._online = false;}}
+
+
+
 
 
 const playerList = document.getElementById('playerList');
