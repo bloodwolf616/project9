@@ -49,7 +49,7 @@ const today = new Date();
 const hour = today.getHours();
 const second = today.getSeconds();
 
-if  (hour > 3 && hour < 13) {
+if  (hour > 10 && hour < 20) {
    player1._online = true;
    player2._online = true;
    player3._online = true;
@@ -62,12 +62,12 @@ if  (hour > 3 && hour < 13) {
    player4._online = false;
  }
 
- if  (hour > 20  && hour < 21) {
-    player1._online = true;
-    player2._online = true;
-    player3._online = true;
-    player4._online = true;
-  }
+  if  (hour > 3  && hour < 5) {
+     player5._online = true;
+   }
+   else {
+     player5._online = false;
+   }
 
 
     if (second > 0 && second < 10) {
