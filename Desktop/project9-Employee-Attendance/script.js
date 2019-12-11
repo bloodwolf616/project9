@@ -167,8 +167,8 @@ breakfastPromise
 
 
 /*objectives
-1.create Name and age list items from scratch in the loop
-
-
-
+1.fix heading with flexbox.
+2. create an alert element that explains the error object and closes with a span element
+3.use :nth child to style every odd player
+4.create a footer
 */
